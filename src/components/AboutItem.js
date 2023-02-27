@@ -7,7 +7,7 @@ export default function AboutItem(props) {
             <img src={props.image} alt="Book1" className='h-80 object-cover'/>
         </div>
         <h2 className='text-2xl'>{props.title}</h2>
-        <p>{props.description}</p>
+        <p className='text-sm'>{props.description} <span className='text-blue-500 font-semibold'>..Read More</span></p>
     </div>
   )
 }

@@ -2,8 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class', // or 'class'
   theme: {
+    extend: {
+      fontFamily:{
+        Poppins: "Poppins, sans-serif",
+      }
+    },
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
@@ -950,6 +955,6 @@ module.exports = {
       40: '40',
       50: '50',
     },
-  },
+  },  
   plugins: [],
 }
